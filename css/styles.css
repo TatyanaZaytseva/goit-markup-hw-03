@@ -44,6 +44,9 @@ h4{
 button{
     cursor: pointer; 
 }
+img{
+    display:block;
+}
 
 .visually-hidden {
     clip: rect(0 0 0 0);
@@ -58,7 +61,7 @@ button{
     margin: 0 auto;
     padding-left: 15px;
     padding-right: 15px;
-    width: 1200px; 
+    width: 1230px; 
     outline: 2px solid tomato;
 }
 /*-------------------------------- Site-nav ---------------------------------*/
@@ -66,15 +69,33 @@ button{
     background-color: var(--white-color);
     padding-top: 24px;
     padding-bottom: 25px;
-    
+
 }
+
+.main-nav{
+    display: flex;
+    align-items: center;
+}
+.site-nav{
+    display:flex;
+    margin-left: 93px;
+}
+.site-nav .item:not(:last-child){
+    margin-right: 50px;
+}
+
 .site-nav .link{
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+
     color: var(--title-text-color);
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
     text-decoration: none;
+   
 }
 .site-nav .link:hover,
 .site-nav .link:focus{
@@ -83,26 +104,45 @@ button{
 .site-nav .link.current{
     color: var(--accent-color);
 }
+
+.contact-nav{
+    display: flex;
+    margin-left: auto;
+}
+.contact-nav .item:not(:last-child){
+    margin-right: 50px;
+}
 .contact-nav .link{
+    display:block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    
     color: var(--primary-text-color);
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
     text-decoration: none;
+    
 }
 .contact-nav .link:hover,
 .contact-nav .link:focus{
     color: var(--accent-color);
 }
-
+.header .container{
+    display: flex;
+    align-items: center;
+}
 /* ------------------------------Hero----------------------------------------- */
 .hero{
     background-color: var(--primary-bg-color);
     text-align: center;
-    padding: 200px 452px 280px 452px;
+    padding: 200px 452px 200px 452px;
+    margin-left: auto;
+    margin-right: auto;
 }
 .hero-title{
+   
     color: var(--white-color);
     font-weight: 900;
     font-size: 44px;
@@ -112,8 +152,9 @@ button{
     text-transform: uppercase;
     margin-bottom: 30px;
     max-width: 696px;
+    
 }
-.hero-link{
+.hero-button{
     display: inline-block;
     
     color: var(--white-color);
@@ -125,7 +166,9 @@ button{
     align-items: center;
     text-align: center;
     letter-spacing: 0.06em;
-    cursor: pointer;    
+    cursor: pointer;
+    margin-left: auto;
+    margin-right: auto;    
 
     border-radius: 4px;
     padding: 10px 32px;
@@ -133,11 +176,21 @@ button{
     border: 0;
    }
 
+   
 /*-----------------------------------Sections------------------------------- */
 
 .section-features{
   padding-top: 94px;
   padding-bottom: 94px;  
+}
+.feature-list{
+    display: flex;
+}
+.feature-list .item{
+    width: 270px;
+}
+.feature-list .item:not(:last-child){
+    margin-right: 30px;
 }
 .feature-list .title{
     color: var(--title-text-color);
@@ -145,16 +198,24 @@ button{
     font-size: 14px;
     line-height: 1.14;
     text-transform: uppercase;
-    margin: 0;
-    margin-bottom: 10;
+    margin-bottom: 10px;
     }
 .feature-list .text{
     font-size: 14px;
     line-height: 1.71;
 }
 
-.section-activity{
 
+
+.section-activity{
+  padding-bottom: 94px;
+}
+.images{
+    display: flex;
+    justify-content: center;
+}
+.images .item:not(:last-child){
+    margin-right: 30px;
 }
 .section-title{
     color: var(--title-text-color);
@@ -165,14 +226,27 @@ button{
     margin-bottom: 50px;
 }
 
+
+
 .section-team{
    background-color: #F5F4FA;
    padding-top: 94px; 
    padding-bottom: 94px;
 }
-
-.team-img{
-    margin-bottom: 30px;
+.section-team .team{
+    display:flex;
+    align-items: flex-start;
+}
+ .description{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    width: 270px;
+ }
+ .team .team-item{
+   background-color:#FFFFFF;
+}
+ .team .team-item:not(:last-child){
+    margin-right: 30px;
 }
 .team .name{
     color: var(--title-text-color);
@@ -181,16 +255,28 @@ button{
     line-height: 1.19;
     text-align: center;
     margin-bottom: 10px;
-}
+    }
 .team .position{
     font-size: 16px;
     line-height: 1.19;
     text-align: center;
-    margin-bottom: 30px;
-}
+   }
 
 /*--------------------------------Section Portfolio-------------------- */
+.section-portfolio{
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.list-buttom{
+    display: flex;
+    margin-bottom: 50px;
+    justify-content: center;
+    
+}
 .list-buttom .item{
+    display: inline-block;
+
     color: var(--title-text-color);
     background-color:#F5F4FA;
     font-family: inherit;
@@ -200,7 +286,16 @@ button{
     text-align: center;
     letter-spacing: 0.03em;
     cursor: pointer;
+
+    padding: 6px 22px;
+    border: 0;
+    border-radius: 4px;
+    margin-right: 8px;
 }
+.list-buttom .item:not(last-child){
+    margin-right: 8px;
+}
+
 .list-buttom .item:hover,
 .list-buttom .item:focus{
 color: var(--white-color);
@@ -213,6 +308,7 @@ background-color: var(--accent-color);
     line-height: 2.0;  
     letter-spacing: 0.06em;
     text-decoration: none;
+    margin-bottom: 4px;
 }
 .list-cards .project-type{
     color: var(--primary-text-color);
@@ -221,7 +317,28 @@ background-color: var(--accent-color);
 }
 .list-cards .link{
     text-decoration: none;
+    display: block;
 }
+.list-cards{
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+}
+.list-cards .item{
+    width: 380px;
+    margin: 15px;
+}
+
+.list-cards .item:nth-child(3n){
+    margin-right: 0;
+}
+.list-cards .item:nth-child(-n+3){
+    margin-bottom: 0;
+}
+.item .name{
+    padding: 20px 24px;
+}
+
 /* ------------------------------------------Footer------------------------------- */
 
 .footer{
@@ -261,5 +378,12 @@ background-color: var(--accent-color);
 
 .logo .second-part{
     color: var(--white-color);
-    margin-bottom: 20px;
+   }
+.footer .logo{
+    display: flex;
+    margin-bottom:20px;
+}
+
+.address .item:not(:last-child){
+margin-bottom: 9px;
 }
