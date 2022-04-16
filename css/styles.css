@@ -46,6 +46,8 @@ button{
 }
 img{
     display:block;
+    max-width: 100%;
+    height: auto;
 }
 
 .visually-hidden {
@@ -61,17 +63,15 @@ img{
     margin: 0 auto;
     padding-left: 15px;
     padding-right: 15px;
-    width: 1230px; 
-    outline: 2px solid tomato;
-}
+    width: 1200px; 
+    }
 /*-------------------------------- Site-nav ---------------------------------*/
 .header{
     background-color: var(--white-color);
     padding-top: 24px;
     padding-bottom: 25px;
-
+    border: 1px solid #ECECEC
 }
-
 .main-nav{
     display: flex;
     align-items: center;
@@ -137,7 +137,8 @@ img{
 .hero{
     background-color: var(--primary-bg-color);
     text-align: center;
-    padding: 200px 452px 200px 452px;
+    padding-top: 200px;
+    padding-bottom: 200px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -152,6 +153,8 @@ img{
     text-transform: uppercase;
     margin-bottom: 30px;
     max-width: 696px;
+    margin-left: auto;
+    margin-right: auto;
     
 }
 .hero-button{
@@ -238,10 +241,11 @@ img{
     align-items: flex-start;
 }
  .description{
+    display: block;
     padding-top: 30px;
     padding-bottom: 30px;
     width: 270px;
- }
+}
  .team .team-item{
    background-color:#FFFFFF;
 }
@@ -325,18 +329,12 @@ background-color: var(--accent-color);
     margin: -15px;
 }
 .list-cards .item{
-    width: 380px;
     margin: 15px;
-}
-
-.list-cards .item:nth-child(3n){
-    margin-right: 0;
-}
-.list-cards .item:nth-child(-n+3){
-    margin-bottom: 0;
+  
 }
 .item .name{
     padding: 20px 24px;
+    border: 1px solid #EEEEEE;
 }
 
 /* ------------------------------------------Footer------------------------------- */
