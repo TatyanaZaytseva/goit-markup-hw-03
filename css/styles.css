@@ -68,9 +68,7 @@ img{
 /*-------------------------------- Site-nav ---------------------------------*/
 .header{
     background-color: var(--white-color);
-    padding-top: 24px;
-    padding-bottom: 25px;
-    border: 1px solid #ECECEC
+    border-bottom: 1px solid #ECECEC;
 }
 .main-nav{
     display: flex;
@@ -182,7 +180,7 @@ img{
    
 /*-----------------------------------Sections------------------------------- */
 
-.section-features{
+.section{
   padding-top: 94px;
   padding-bottom: 94px;  
 }
@@ -211,7 +209,7 @@ img{
 
 
 .section-activity{
-  padding-bottom: 94px;
+  padding-top: 0;
 }
 .images{
     display: flex;
@@ -233,9 +231,7 @@ img{
 
 .section-team{
    background-color: #F5F4FA;
-   padding-top: 94px; 
-   padding-bottom: 94px;
-}
+  }
 .section-team .team{
     display:flex;
     align-items: flex-start;
@@ -267,18 +263,13 @@ img{
    }
 
 /*--------------------------------Section Portfolio-------------------- */
-.section-portfolio{
-    padding-top: 94px;
-    padding-bottom: 94px;
-}
-
 .list-buttom{
     display: flex;
     margin-bottom: 50px;
     justify-content: center;
     
 }
-.list-buttom .item{
+.list-buttom .button{
     display: inline-block;
 
     color: var(--title-text-color);
@@ -294,14 +285,14 @@ img{
     padding: 6px 22px;
     border: 0;
     border-radius: 4px;
-    margin-right: 8px;
+    /* margin-right: 8px; */
 }
 .list-buttom .item:not(last-child){
     margin-right: 8px;
 }
 
-.list-buttom .item:hover,
-.list-buttom .item:focus{
+.list-buttom .button:hover,
+.list-buttom .button:focus{
 color: var(--white-color);
 background-color: var(--accent-color);
 }
